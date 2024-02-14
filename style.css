@@ -1,0 +1,166 @@
+/* Stylesheet content */
+*,
+*:before,
+*:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0e0c1d;
+}
+
+.background {
+    width: 430px;
+    height: 520px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+}
+
+.background .shape {
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.shape:first-child {
+    background: linear-gradient(#0c162f, #23a2f6);
+    left: -80px;
+    top: -80px;
+}
+
+.shape:last-child {
+    background: linear-gradient(to right, #ff512f, #f09819);
+    right: -30px;
+    bottom: -80px;
+}
+
+form {
+    height: 520px;
+    width: 400px;
+    background-color: rgba(255, 255, 255, 0.13);
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+    padding: 50px 35px;
+}
+
+form * {
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+    outline: none;
+    border: none;
+}
+
+form h3 {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 42px;
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+input {
+    display: block;
+    height: 50px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.07);
+    border-radius: 3px;
+    padding: 0 10px;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+::placeholder {
+    color: #e5e5e5;
+}
+
+button {
+    margin-top: 50px;
+    width: 100%;
+    background-color: #ffffff;
+    color: #080710;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Atur container untuk sosial media dengan margin yang memadai */
+.social {
+    display: flex;
+    justify-content: center;
+    /* Menyatukan tombol secara horizontal */
+    align-items: center;
+    /* Menyatukan tombol secara vertikal */
+    gap: 20px;
+    /* Memberikan jarak antara tombol */
+    margin-top: 30px;
+    /* Menambahkan ruang di atas tombol sosial media */
+    margin-bottom: 30px;
+    /* Menambahkan ruang di bawah tombol sosial media */
+}
+
+/* Atur tampilan untuk setiap tombol sosial media */
+.social div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    /* Atau lebar lain yang Anda inginkan */
+    height: 50px;
+    /* Atau tinggi lain yang Anda inginkan */
+    padding: 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    background: none;
+    /* Ini akan memastikan background tidak tertimpa */
+}
+
+/* Menambahkan warna spesifik untuk setiap brand */
+
+.social .fa-google {
+    background: linear-gradient(90deg, #4285F4, #DB4437, #F4B400, #0F9D58);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}
+
+
+.social .fa-facebook {
+    color: #1877F2;
+    /* Facebook Blue */
+}
+
+.social .fa-twitter {
+    color: #1DA1F2;
+    /* Twitter Blue */
+}
+
+/* Menambahkan ruang antara ikon dan teks */
+.social i {
+    margin-right: 8px;
+}
+
+/* Menambahkan efek hover pada tombol */
+.social div:hover {
+    opacity: 0.8;
+}
